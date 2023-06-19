@@ -8,4 +8,4 @@ streamlit==1.22.0
 streamlit_chat==0.0.2.2
 translate==3.6.1
 tiktoken==0.3.1
-PyAudio==0.2.13
+
