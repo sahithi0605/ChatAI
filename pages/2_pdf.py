@@ -1,4 +1,3 @@
-
 from PyPDF2 import PdfReader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -21,7 +20,7 @@ async def storeDocEmbeds(file, filename):
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     chunks = splitter.split_text(corpus)
     
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(openai_api_key=api_key)
     vectors = FAISS.from_texts(chunks, embeddings)
     
     with open(filename + ".pkl", "wb") as f:
