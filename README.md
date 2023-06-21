@@ -1,7 +1,7 @@
 # ChatAI
 
 ChatAI is a website inspired by ChatGPT.
-Through this website, users can converse with the chatbot, get pdf summarization, and geenrate images using DALLE, OPENAI API Key.
+Through this website, users can converse with the chatbot, get pdf summarization, and geenrate images using LangChain, OpenAI Embeddings, DALLE, OPENAI API Key.
 
 Get OpenAI API Key from this website: https://platform.openai.com/account/api-keys
 
